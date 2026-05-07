@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="../estilos/forms.css">
+</head>
+<body>
+    <header>
+    <main>
+    <form id="formulario" action="respFormulario.html" method="post">
+            <section class="cima">
+                <p class="aviso">Não é associado? Faça seu cadastro</p>
+                <p class="cor"></p>
+            </section>
+            <section class="l1">
+                <label for="ipNome">Nome</label>
+                <input type="text" id="ipNome" name="ipNome">
+            </section>
+            <section class="l1">
+                <label for="ipNomeCompleto">Nome Completo</label>
+                <input type="text" id="ipNomeCompleto" name="ipNomeCompleto" required>
+            </section>
+            <section class="l1">
+                <label for="ipCPF">CPF</label>
+                <input type="text" placeholder="000.000.000-00" inputmode="numeric" inputmode="" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" id="ipCPF" name="ipCPF" required>
+            </section>
+            <section class="l1">
+                <label for="ipEmail">E-mail</label>
+                <input type="email" id="ipEmail" name="ipEmail" required>
+            </section>
+            <section class="l1">
+                <label for="ipWebSite">WebSite</label>
+                <input type="url" id="ipWebSite" name="ipWebSite">
+            </section>
+            <section class="l1">
+                <label for="ipEndereco">Endereço</label>
+                <input type="text" id="ipEndereco" name="ipEndereco" required>
+            </section>
+            <section class="l2">
+                <label for="ipBairro">Bairro</label>
+                <input type="text" id="ipBairro" name="ipBairro">
+                <label for="ipCidade">Cidade</label>
+                <input type="text" id="ipCidade" name="ipCidade" required>
+            </section>
+            <section class="l2">
+                <label for="ipCep">Cep</label>
+                <input type="text" inputmode="numeric" pattern="[0-9]+" id="ipCep" name="ipCep" required>
+                <label for="slUF">UF</label>
+                <select id="slUF" name="slUF" required>
+                    <option>AC</option>
+                    <option>AL</option>
+                    <option>AP</option>
+                    <option>AM</option>
+                    <option>BA</option>
+                    <option>CE</option>
+                    <option>DF</option>
+                    <option>ES</option>
+                    <option>GO</option>
+                    <option>MA</option>
+                    <option>MT</option>
+                    <option>MS</option>
+                    <option>MG</option>
+                    <option>PA</option>
+                    <option>PB</option>
+                    <option>PR</option>
+                    <option>PE</option>
+                    <option>PI</option>
+                    <option>RJ</option>
+                    <option>RN</option>
+                    <option>RS</option>
+                    <option>RO</option>
+                    <option>RR</option>
+                    <option>SC</option>
+                    <option>SP</option>
+                    <option>SE</option>
+                    <option>TO</option>
+                </select>
+            </section>
+            <section class="l2">
+                <label for="ipTelefone">Telefone</label>
+                <input type="tel" id="ipTelefone" name="ipTelefone" required>
+                <label for="ipFax">Fax</label>
+                <input type="text" id="ipFax" name="ipFax">
+            </section>
+            <section class="l2">
+                <label for="ipData">Data Nascimento</label>
+                <input type="date" id="ipData" name="ipData">
+                <label>Sexo</label>
+                <span>
+                    <input type="radio" name="sexo" value="M"> M
+                    <input type="radio" name="sexo" value="F"> F
+                </span>
+            </section>
+            <section class="l2">
+                <label for="ipCelular">Celular</label>
+                <input type="text" id="ipCelular" name="ipCelular" required>
+                <label for="slCivil">Est.Civil</label>
+                <select id="slCivil" name="slCivil">
+                <option>Solteiro</option>
+                <option>Casado</option>
+                <option>Viúvo</option>
+                <option>Divorciado</option>
+                </select>
+            </section>
+            <section class="l2">
+                <label for="ipLogin">Login</label>
+                <input type="text" id="ipLogin" name="ipLogin" required>
+                <label for="ipSenha">Senha</label>
+                <input type="password" id="ipSenha" name="ipSenha" required>
+            </section>
+            <section>
+                <p>Deseja receber informações sobre os seguintes assuntos abaixo:</p>
+                <p>
+                <input type="checkbox"> Tecnologia
+                <input type="checkbox"> Esportes
+                <input type="checkbox"> Automóveis
+                <input type="checkbox"> Culinária
+                <input type="checkbox"> Política
+                <input type="checkbox"> Policial
+                <input type="checkbox"> Tempo
+                </p>
+                <p>
+                <input type="checkbox"> Cultura
+                <input type="checkbox"> Economia
+                <input type="checkbox"> Jogos
+                <input type="checkbox"> Educação
+                <input type="checkbox"> Viagem
+                <input type="checkbox"> Empregos
+                <input type="checkbox"> Moda e Estilo
+                </p>
+                <p>
+                    <input type="checkbox" required>
+                    Li as regras de cadastro e autorizo a criação do usuário
+                </p>
+            </section>
+            <section>
+                <input type="submit" value="Confirmar">
+                <input type="reset" value="Retornar">
+            </section>
+        </form>
+    </main>
+    </header>
+</body>
+</html>

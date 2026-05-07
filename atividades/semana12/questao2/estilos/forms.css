@@ -1,0 +1,54 @@
+#formulario {
+    margin: 0;
+    padding: 0;
+    width: 460px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    border: none;
+}
+.l1 {
+    margin-bottom: 3px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 60px 1fr;
+}
+.cor {
+    background-color: #000066;
+}
+.l2 {
+    margin-bottom: 6px;
+    display: grid;
+    column-gap: 5px;
+    align-items: center;
+    grid-template-columns: 65px 160px 45px 185px;
+}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="password"],
+input[type="date"],
+select {
+    height: 20px;
+    border: 1px solid #b8c0c8;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin: 0 3px 0 0;
+}
+
+.cima {
+    grid-template-columns: 270px 190px;
+    display: grid;
+}
+.aviso {
+    background-color: #4fc4ef;
+    color: black;
+    padding: 5px;
+    font-weight: bold;
+
+}

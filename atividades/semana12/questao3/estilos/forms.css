@@ -1,0 +1,27 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+ }
+ fieldset{
+    padding: 12px;
+    border: 1px solid #000000;
+ }
+ form{
+    width: 530px;
+    margin: 100px auto;
+ }
+ fieldset>fieldset{
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+ }
+ input{
+    margin-top: 15px;
+    width: 100px;
+
+ }
+ body {
+     font-family: Arial, sans-serif;
+ }
